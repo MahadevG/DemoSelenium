@@ -64,7 +64,7 @@ public class Utility {
 			File DestFile = new File("Report//screen_shot//" + count + ".png");
 			java.nio.file.Files.copy(SrcFile.toPath(), DestFile.toPath());
 		}} catch (Exception e) {
-			System.out.println("********** Error While Taking Screen Shot ***********");
+			System.out.println(e.getMessage());
 		}
 
 	}

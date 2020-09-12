@@ -6,7 +6,8 @@
 	</listeners>
 	<test thread-count="1" name="Mammoth-Test">
 		<classes>
-			<class name="com.mahadev.selenium.DemoSelenium.logintest" />
+			<!--  <class name="com.mahadev.selenium.DemoSelenium.logintest" />-->
+			<class name="com.mahadev.selenium.DemoSelenium.HeadlessTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
