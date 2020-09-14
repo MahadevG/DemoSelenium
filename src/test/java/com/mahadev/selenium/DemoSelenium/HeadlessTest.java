@@ -40,7 +40,7 @@ public class HeadlessTest {
 	    try {
 	    	driver.findElement(Xpath.Login.USER_NAME).click();
 	    	driver.findElement(Xpath.Login.USER_NAME).clear();
-	    	driver.findElement(Xpath.Login.USER_NAME).sendKeys("mammoth");
+	    	driver.findElement(Xpath.Login.USER_NAME).sendKeys("");
 			Thread.sleep(100);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -68,9 +68,9 @@ public class HeadlessTest {
 		Reporter.setWebDriver(driver);
 		//Verify positive login case
 	    driver.findElement(Xpath.Login.USER_NAME).click();
-	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("lina@mammoth.io");
+	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("");
 	    driver.findElement(Xpath.Login.PASS_WORD).click();
-	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("abstract1045");
+	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("");
 	    Assert.assertEquals("Log in", driver.findElement(Xpath.Login.SIGN_IN).getText());
 	    driver.findElement(Xpath.Login.SIGN_IN).click();
 	    Thread.sleep(300);
@@ -93,10 +93,10 @@ public class HeadlessTest {
 		//Verify positive login case
 	    driver.findElement(Xpath.Login.USER_NAME).click();
 	    driver.findElement(Xpath.Login.USER_NAME).clear();
-	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("lina@mammoth.io");
+	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("");
 	    driver.findElement(Xpath.Login.PASS_WORD).click();
 	    driver.findElement(Xpath.Login.PASS_WORD).clear();
-	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("abstract1045");
+	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("");
 	    Assert.assertEquals("Log in", driver.findElement(Xpath.Login.SIGN_IN).getText());
 	    driver.findElement(Xpath.Login.SIGN_IN).click();
 	    Thread.sleep(300);
@@ -111,10 +111,10 @@ public class HeadlessTest {
 	public static void positiveLogin() throws InterruptedException {
 		driver.findElement(Xpath.Login.USER_NAME).click();
 	    driver.findElement(Xpath.Login.USER_NAME).clear();
-	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("lina@mammoth.io");
+	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("");
 	    driver.findElement(Xpath.Login.PASS_WORD).click();
 	    driver.findElement(Xpath.Login.PASS_WORD).clear();
-	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("abstract104");
+	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("");
 	    
 	    Assert.assertEquals("Log in", driver.findElement(Xpath.Login.SIGN_IN).getText());
 	    driver.findElement(Xpath.Login.SIGN_IN).click();
