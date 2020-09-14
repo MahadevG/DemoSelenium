@@ -56,9 +56,9 @@ public class logintest {
 		Reporter.setWebDriver(driver);
 		//Verify positive login case
 	    driver.findElement(Xpath.Login.USER_NAME).click();
-	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("lina@mammoth.io");
+	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("user_name");
 	    driver.findElement(Xpath.Login.PASS_WORD).click();
-	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("abstract1045");
+	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("wrong_password");
 	    Assert.assertEquals("Log in", driver.findElement(Xpath.Login.SIGN_IN).getText());
 	    driver.findElement(Xpath.Login.SIGN_IN).click();
 	    Thread.sleep(300);
@@ -81,10 +81,10 @@ public class logintest {
 		//Verify positive login case
 	    driver.findElement(Xpath.Login.USER_NAME).click();
 	    driver.findElement(Xpath.Login.USER_NAME).clear();
-	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("lina@mammoth.io");
+	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("username");
 	    driver.findElement(Xpath.Login.PASS_WORD).click();
 	    driver.findElement(Xpath.Login.PASS_WORD).clear();
-	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("abstract1045");
+	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("Wrong password");
 	    Assert.assertEquals("Log in", driver.findElement(Xpath.Login.SIGN_IN).getText());
 	    driver.findElement(Xpath.Login.SIGN_IN).click();
 	    Thread.sleep(300);
@@ -102,10 +102,10 @@ public class logintest {
 		//Verify positive login case
 	    driver.findElement(Xpath.Login.USER_NAME).click();
 	    driver.findElement(Xpath.Login.USER_NAME).clear();
-	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("lina@mammoth.io");
+	    driver.findElement(Xpath.Login.USER_NAME).sendKeys("user_name");
 	    driver.findElement(Xpath.Login.PASS_WORD).click();
 	    driver.findElement(Xpath.Login.PASS_WORD).clear();
-	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("abstract104");
+	    driver.findElement(Xpath.Login.PASS_WORD).sendKeys("password");
 	    Assert.assertEquals("Log in", driver.findElement(Xpath.Login.SIGN_IN).getText());
 	    driver.findElement(Xpath.Login.SIGN_IN).click();
 	    Thread.sleep(300);
