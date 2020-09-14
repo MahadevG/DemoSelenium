@@ -19,7 +19,7 @@ public class logintest {
 	static BrowserSetting bs = new BrowserSetting();
 	static WebDriver driver = bs.BrowserSettings();
 	
-//	@Test(priority=1,description =" username and password fields validation")
+	@Test(priority=1,description =" username and password fields validation")
 	public static void verifyUsernameFiled() {
 		Reporter.setWebDriver(driver);
 		WebElement userField;
@@ -50,7 +50,7 @@ public class logintest {
 	    driver.navigate().refresh();
 	}
 
-//	@Test(priority=2,description ="Negative login test")
+	@Test(priority=2,description ="Negative login test")
 	public static void negativeLogin() throws InterruptedException {
 
 		Reporter.setWebDriver(driver);
@@ -74,7 +74,7 @@ public class logintest {
 	    driver.navigate().refresh();
 	}
 	
-//	@Test(priority=3,description="Verify framework in fail senario")
+	@Test(priority=3,description="Verify framework in fail senario")
 	public static void fail() throws InterruptedException {
 
 		Reporter.setWebDriver(driver);
